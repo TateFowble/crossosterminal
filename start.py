@@ -19,14 +19,14 @@ def main(a = False):
             
             elif(firstCommand == 'gui'):
                 webpage = "index.html"
-                #webbrowser.get('firefox').open(webpage)
+                webbrowser.get('firefox').open(webpage)
                 os.system('open ' + webpage)
 
                 if(webbrowser.Error()):
                     print('Error: Could not launch applet')
 
             elif(firstCommand == 'hackermode'):
-                print('Wiener')
+                print('Function stills to be written')
 
 
             elif(firstCommand == 'logo'):
