@@ -42,7 +42,7 @@ def main(a = False):
                 a = False
                 exit
             else:
-                print('The hell???')
+                print('Command Unreconized')
     
     else:
         spaced(2)
