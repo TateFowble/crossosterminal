@@ -3,7 +3,7 @@ import platform, os, subprocess
 platformType = platform.system()
 
 if (platformType == 'Darwin'):
-    os.startfile('./scripts/main.py')
+    os.open('start ./scripts/main.py')
 
 elif (platformType == 'Windows'):
     os.startfile('.\\scripts\\main.py')
