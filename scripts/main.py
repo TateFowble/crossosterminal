@@ -1,7 +1,7 @@
 import os, webbrowser, platform, json
 from time import sleep
 
-
+platformType = platform.platform()
 def main(a = False):
 
     spaced(500)
@@ -11,6 +11,7 @@ def main(a = False):
     spaced(2)
     if(a):
         while(a):
+            print('running ' + platformType)
             spaced(1)
             firstCommand = input('> ')
             spaced(1)
