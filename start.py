@@ -1,15 +1,15 @@
-import platform, os
+import platform, os, subprocess
 
 platformType = platform.system()
 
 if (platformType == 'Darwin'):
-    os.startfile('main.py')
+    os.startfile('./scripts/main.py')
 
 elif (platformType == 'Windows'):
-    os.startfile('main.py')
+    os.startfile('.\\scripts\\main.py')
 
 elif (platformType == 'Linux'):
-    os.startfile('main.py')
+    os.startfile('./scripts/main.py')
 
 else:
     print('Error: Unknown operating system')
