@@ -3,13 +3,13 @@ import platform, os
 platformType = platform.system()
 
 if (platformType == 'Darwin'):
-    os.startfile('start.py')
+    os.startfile('main.py')
 
 elif (platformType == 'Windows'):
-    os.startfile('start.py')
+    os.startfile('main.py')
 
 elif (platformType == 'Linux'):
-    os.startfile('start.py')
+    os.startfile('main.py')
 
 else:
-    print('Bro idk')
+    print('Error: Unknown operating system')
