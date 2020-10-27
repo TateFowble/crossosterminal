@@ -1,0 +1,3 @@
+# newterminal
+
+run 'start.py'
