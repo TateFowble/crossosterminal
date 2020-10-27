@@ -2,16 +2,18 @@ import os, webbrowser, platform, json
 from time import sleep
 
 platformType = platform.platform()
-def main(a = False):
+
+def main(a):
 
     spaced(500)
     logo()
     spaced(5)
+    print('Running ' + platformType)
+    spaced(1)
     print('Type \'help\' for a list of commands')
     spaced(2)
     if(a):
         while(a):
-            print('running ' + platformType)
             spaced(1)
             firstCommand = input('> ')
             spaced(1)
@@ -21,10 +23,13 @@ def main(a = False):
             elif(firstCommand == 'gui'):
                 webpage = "index.html"
                 webbrowser.get('firefox').open(webpage)
-                os.system('open ' + webpage)
+                webbrowser.get('chrome').open(webpage)
+                os.system('start ' + webpage)
 
                 if(webbrowser.Error()):
                     print('Error: Could not launch applet')
+                else:
+                    print('Launched')
 
             elif(firstCommand == 'hackermode'):
                 print('Function stills to be written')
@@ -34,7 +39,7 @@ def main(a = False):
                 logo()
 
             elif(firstCommand == 'clear'):
-                spaced(5000)
+                spaced(300)
 
             elif(firstCommand == 'exit'):
                 spaced(2)
