@@ -9,12 +9,12 @@ from youKnow import I_Know
 
 platformType = platform.platform()
 
-value = 4
+valuedLogo = 4
 
 def main(a):
 
     spaced(500)
-    logo(value)
+    logo(valuedLogo)
     spaced(5)
     print('Running ' + platformType)
     spaced(1)
@@ -23,17 +23,17 @@ def main(a):
     if(a):
         while(a):
             spaced(1)
-            
+
             firstCommand = input('> ')
-            
+
             spaced(1)
 
-            if(firstCommand == 'help'):
+            if(firstCommand == 'help' or firstCommand == 'Help' or firstCommand == 'HELP'):
                 spaced(2)
                 help()
                 spaced(2)
             
-            elif(firstCommand == 'gui'):
+            elif(firstCommand == 'gui' or firstCommand == 'Gui' or firstCommand == 'GUI'):
                 webpage = "index.html"
                 webbrowser.get('firefox').open(webpage)
                 webbrowser.get('chrome').open(webpage)
@@ -46,23 +46,24 @@ def main(a):
 
             elif(firstCommand == 'I know'):
                 I_Know()
-            elif (firstCommand == 'random'):
+
+            elif (firstCommand == 'random' or firstCommand == 'Random' or firstCommand == 'RANDOM'):
                 spaced(1)
                 randomGen(0,10)
                 spaced(1)
 
-            elif(firstCommand == 'hackermode'):
+            elif(firstCommand == 'hackermode' or firstCommand == 'Hackermode' or firstCommand == 'HACKERMODE'):
                 print('Function stills to be written')
 
 
-            elif(firstCommand == 'logo'):
+            elif(firstCommand == 'logo' or firstCommand == 'Logo' or firstCommand == 'LOGO'):
                 spaced(10)
-                logo(value)
+                logo(valuedLogo)
 
-            elif(firstCommand == 'clear'):
+            elif(firstCommand == 'clear' or firstCommand == 'Clear' or firstCommand == 'CLEAR'):
                 spaced(300)
 
-            elif(firstCommand == 'exit'):
+            elif(firstCommand == 'exit' or firstCommand == 'Exit' or firstCommand == 'EXIT'):
                 spaced(2)
                 print('Entering normal terminal mode')
                 spaced(2)
