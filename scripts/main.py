@@ -3,6 +3,7 @@ from time import sleep
 from helpCommands import help
 from logo import logo
 from makeSpace import spaced
+from randomGenerator import randomGen
 
 platformType = platform.platform()
 
@@ -24,7 +25,9 @@ def main(a):
             spaced(1)
 
             if(firstCommand == 'help'):
+                spaced(2)
                 help()
+                spaced(2)
             
             elif(firstCommand == 'gui'):
                 webpage = "index.html"
@@ -36,6 +39,10 @@ def main(a):
                     print('Error: Could not launch applet')
                 else:
                     print('Launched')
+            elif (firstCommand == 'random'):
+                spaced(1)
+                randomGen(0,10)
+                spaced(1)
 
             elif(firstCommand == 'hackermode'):
                 print('Function stills to be written')
