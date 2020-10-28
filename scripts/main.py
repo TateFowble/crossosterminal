@@ -4,6 +4,8 @@ from helpCommands import help
 from logo import logo
 from makeSpace import spaced
 from randomGenerator import randomGen
+from youKnow import I_Know
+
 
 platformType = platform.platform()
 
@@ -39,6 +41,9 @@ def main(a):
                     print('Error: Could not launch applet')
                 else:
                     print('Launched')
+
+            elif(firstCommand == 'I know'):
+                I_Know()
             elif (firstCommand == 'random'):
                 spaced(1)
                 randomGen(0,10)
