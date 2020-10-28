@@ -8,7 +8,7 @@ def randomGen(lowestN = 0,HighestN=10):
         lowestN = input('Min Number: ')
         HighestN = input('Max Number: ')
     int(inputed())
-    if(lowestN & HighestN == type(int)):
+    if(lowestN & HighestN == type()):
         randomNum = random.randint(lowestN, HighestN)
         print(randomNum)
     else:
