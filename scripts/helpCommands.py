@@ -1,5 +1,5 @@
 def help():
-    print('_'*50)
+    print('_'*98)
     print('')
     print('Help  -  Let\'s the user know of the availible commands')
     print('GUI  -  Displays a GUI version of the program in a web browser')
@@ -8,4 +8,4 @@ def help():
     print('Logo  -  Displays the program\'s logo')
     print('Clear  -  Clears the terminal screen while program is running')
     print('Exit  -  Exits the program entirely')
-    print('_'*50)
+    print('_'*98)
