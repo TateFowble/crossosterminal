@@ -1,5 +1,5 @@
 def logo(value):
-    if(value == 1)
+    if(value == 1):
         print(' ______             _           __ ')
         print('/_  _____ ______ _(____ ___ _  / / ')
         print(' / / / -_/ __/  \' \/ / _ / _ `/ / ')
