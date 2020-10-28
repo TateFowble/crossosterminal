@@ -55,7 +55,7 @@ def main(a):
 
             elif(firstCommand == 'logo'):
                 spaced(10)
-                logo()
+                logo(1)
 
             elif(firstCommand == 'clear'):
                 spaced(300)
