@@ -12,7 +12,7 @@ platformType = platform.platform()
 def main(a):
 
     spaced(500)
-    logo()
+    logo(2)
     spaced(5)
     print('Running ' + platformType)
     spaced(1)
@@ -55,7 +55,7 @@ def main(a):
 
             elif(firstCommand == 'logo'):
                 spaced(10)
-                logo(1)
+                logo(2)
 
             elif(firstCommand == 'clear'):
                 spaced(300)
