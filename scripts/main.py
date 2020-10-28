@@ -36,6 +36,7 @@ def main(a):
 
 
             elif(firstCommand == 'logo'):
+                spaced(10)
                 logo()
 
             elif(firstCommand == 'clear'):
@@ -75,25 +76,9 @@ def spaced(howMany):
         print('')
 
 def logo():
-    print(' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -')
-    print('- '*50)
-    print(' -'*50)
-    print('- '*50)
-    print(' -'*50)
-    print('- '*50)
-    print(' -'*50)
-    print('- '*50)
-    print(' -'*50)
-    print('- '*50)
-    print(' -'*50)
-    print('- '*50)
-    print(' -'*50)
-    print('- '*50)
-    print(' -'*50)
-    print('- '*50)
-    print(' -'*50)
-    print('- '*50)
-    print(' -'*50)
-    print('- '*50)
+    print(' ______             _           __')
+    print('/_  _____ ______ _(____ ___ _  / /')
+    print(' / / / -_/ __/  \' \/ / _ / _ `/ / ')
+    print('/_/  \__/_/ /_/_/_/_/_//_\_,_/_/  ')
 
 main(True)
