@@ -1,5 +1,8 @@
-import os, webbrowser, platform, json
+import os, webbrowser, platform, json, sys
 from time import sleep
+from helpCommands import help
+from logo import logo
+from makeSpace import spaced
 
 platformType = platform.platform()
 
@@ -15,8 +18,11 @@ def main(a):
     if(a):
         while(a):
             spaced(1)
+            
             firstCommand = input('> ')
+            
             spaced(1)
+
             if(firstCommand == 'help'):
                 help()
             
@@ -56,29 +62,5 @@ def main(a):
         print('Entering normal terminal mode')
         spaced(2)
         exit
-
-
-def help():
-    spaced(2)
-    print('-'*50)
-    print('Help  -  Let\'s the user know of the availible commands')
-    print('GUI  -  Displays a GUI version of the program in a web browser')
-    print('Hackermode  -  Displays random bytecode to simulate movie hacking')
-    print('Logo  -  Displays the program\'s logo')
-    print('Clear  -  Clears the terminal screen while program is running')
-    print('Exit  -  Exits the program entirely')
-    print('-'*50)
-    spaced(2)
-
-
-def spaced(howMany):
-    for howMany in range(0, howMany):
-        print('')
-
-def logo():
-    print(' ______             _           __')
-    print('/_  _____ ______ _(____ ___ _  / /')
-    print(' / / / -_/ __/  \' \/ / _ / _ `/ / ')
-    print('/_/  \__/_/ /_/_/_/_/_//_\_,_/_/  ')
 
 main(True)
