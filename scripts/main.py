@@ -5,7 +5,7 @@ from logo import logo
 from makeSpace import spaced
 from randomGenerator import randomGen
 from youKnow import I_Know
-
+from sike8Ball import sike8
 
 platformType = platform.platform()
 
@@ -46,10 +46,14 @@ def main(a):
 
             elif(firstCommand == 'I know'):
                 I_Know()
+            elif(firstCommand == 'sike8' or firstCommand == 'Sike8' or firstCommand == 'SIKE8'):
+                spaced(2)
+                sike8()
+                spaced(2)
 
             elif (firstCommand == 'random' or firstCommand == 'Random' or firstCommand == 'RANDOM'):
                 spaced(1)
-                randomGen(0,10)
+                randomGen()
                 spaced(1)
 
             elif(firstCommand == 'hackermode' or firstCommand == 'Hackermode' or firstCommand == 'HACKERMODE'):
