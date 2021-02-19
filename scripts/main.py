@@ -74,7 +74,7 @@ def main(a):
                 a = False
                 exit
             else:
-                print('Command Unrecognized')
+                print('Command \"' + firstCommand + '\" Unrecognized')
     
     else:
         spaced(2)
