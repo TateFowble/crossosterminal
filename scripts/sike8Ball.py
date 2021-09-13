@@ -6,6 +6,7 @@ def sike8():
     user123 = str(input('Ask a question: '))
     spaced(1)
     randomNum = random.randint(1,20)
+    print(randomNum)
     if(randomNum == 1):
         print('As I see it, yes.')
     elif(randomNum == 2):
